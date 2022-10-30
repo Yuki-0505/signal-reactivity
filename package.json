@@ -1,0 +1,42 @@
+{
+  "name": "signal-reactivity",
+  "version": "0.0.0",
+  "author": "shewulong",
+  "license": "MIT",
+  "description": "Base on @vue/reactivity",
+  "keywords": [
+    "reactive",
+    "reactivity",
+    "vuex",
+    "mobx"
+  ],
+  "type": "commonjs",
+  "module": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "repository": "https://github.com/Yuki-0505/signal-reactivity.git",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "tsc",
+    "publish:build": "pnpm build && pnpm publish",
+    "push": "git push && git push --tags",
+    "publish:push": "pnpm publish:build && pnpm push",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=14.20.0"
+  },
+  "dependencies": {
+    "@vue/reactivity": "latest"
+  },
+  "devDependencies": {
+    "vitest": "^0.23.4"
+  }
+}
