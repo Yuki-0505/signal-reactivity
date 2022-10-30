@@ -12,11 +12,11 @@
 
 ```bash
 # npm
-npm i micro-x
+npm i signal-reactivity
 # or pnpm
-pnpm i micro-x
+pnpm i signal-reactivity
 # or yarn
-yarn add micro-x
+yarn add signal-reactivity
 ```
 
 ## 尝试
